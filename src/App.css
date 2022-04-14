@@ -1,39 +1,41 @@
 .App {
-  text-align: center;
+ display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.sidebar{
+  width: 200px;
+  background-color: aliceblue;
+  color:rgb(255, 174, 0);
+  padding-top: 200px;
+  padding-left: 20px;
+  height: 100vh;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
 }
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.sidebar_items{
+display: flex;
+flex-direction: column;
 }
-
-.App-link {
-  color: rgb(112, 76, 182);
+.sidebar_items a{
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+h2{
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+.tab-nav a{
+  text-decoration: none;
+  padding: 20px;
+}
+.tab_active{
+  color: red;
+  text-decoration: underline!important;
+  
+}
+.innercontent, .login_container{
+  padding-top: 70px;
+  padding-left: 40px;
 }
