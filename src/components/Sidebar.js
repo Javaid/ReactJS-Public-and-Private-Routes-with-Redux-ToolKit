@@ -23,6 +23,9 @@ const Sidebar = (props) => {
 
   return (
     <div className="sidebar">
+      <div className="logo">
+        <h1>FraudLens</h1>
+      </div>
       <div className="sidebar_items">
         {token && (
           <>
@@ -34,7 +37,9 @@ const Sidebar = (props) => {
         {!token && <Link to="login">Login</Link>}
 
         {location.pathname !== "/login" && (
-          <button onClick={doLogout}>Logout</button>
+          <button onClick={doLogout} className="btn btn-primary">
+            Logout
+          </button>
         )}
       </div>
     </div>
